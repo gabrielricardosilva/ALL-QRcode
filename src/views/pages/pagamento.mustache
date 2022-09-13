@@ -1,0 +1,57 @@
+{{partials/header}}
+<html>
+<link rel="stylesheet" type="text/css" href="/css/pagamento.css" media="screen"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<body>  
+    <div class= "app-container">
+    <div class="top-box">  
+    <p> Processso de Pagamento</p>
+    </div>
+    
+    <div class="middle-box">
+        <h1><span>R$</span>101,45</h1>
+        <p>Valor Total</p>
+    </div>
+    
+    <div class="bottom-box">
+    <a href="pix"><button type="button" class= "payment-option-btn" >Pagar com Pix
+    </button></a>
+
+
+
+    <a href="dinheiro"> <button type="button" class= "payment-option-btn">Pagar em Dinheiro</button>
+    </div></a>
+    
+    <div class="card-details">
+    <p>Pague com cartão de crédito ou débito</p>
+    <div class="card-num-field-group">
+    <label>Número do cartão</label><br>
+    <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+    </div>
+    
+    <div class="date-field-group">
+    <label>Data de validade</label><br>
+    <input type="text" class="date-field" placeholder="mm">
+    <input type="text" class="date-field" placeholder="yyyy">
+    </div>
+    
+    <div class="cvc-field-group">
+    <label>CV</label><br>
+    <input type="password" class="cvc-field" placeholder="xxx">
+    </div>
+        
+    <div class="name-field-group">
+    <label>Nome do Titular</label><br>
+    <input type="text" class="name-field" placeholder="Seu nome">
+    </div>
+    
+    <a href="pagueagora"><button type="button" class="pay-btn">Pague Agora
+    </button></a>
+ 
+    </div>
+    
+</div>
+    <script src="/pagamento.js"></script>
+</body>
+</html>
+{{partials/footer}}
